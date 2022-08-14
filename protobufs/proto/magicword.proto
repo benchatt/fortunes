@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package fortuna.magicword;
+
+message MagicWord {
+    oneof magicWordResult {
+        string word = 1;
+        bool empty = 2;
+    }
+}
