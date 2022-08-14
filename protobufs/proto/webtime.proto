@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package fortuna.webtime;
+
+import "google/protobuf/timestamp.proto";
+
+message Webtime {
+    message InternetTime {
+        uint64 beats = 1;
+        uint64 ticks = 2;
+    }
+
+    google.protobuf.Timestamp normalTime = 1;
+    int32 offset = 2;
+    InternetTime internetTime = 3;
+}

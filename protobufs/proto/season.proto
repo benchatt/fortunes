@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package fortuna.season;
+
+message Season {
+
+    enum MoonPhase {
+        UNDEFINED_MOON_PHASE = 0;
+        NEW = 1;
+        FIRST_QUARTER = 2;
+        FULL = 3;
+        SECOND_QUARTER = 4;
+    }
+
+    message MoonPhaseResult {
+        MoonPhase last = 1;
+        MoonPhase next = 2;
+        uint32 daysSinceLast = 3;
+        uint32 daysUntilNext = 4;
+    }
+
+    enum StationDays {
+        UNDEFINED_STATION_DAY = 0;
+        DECEMBER_SOLSTICE = 1;
+        FEBRUARY_CROSS_QUARTER = 2;
+        MARCH_EQUINOX = 3;
+        MAY_CROSS_QUARTER = 4;
+        JUNE_SOLSTICE = 5;
+        AUGUST_CROSS_QUARTER = 6;
+        SEPTEMBER_EQUINOX = 7;
+        NOVEMBER_CROSS_QUARTER = 8;
+    }
+
+    message StationDaysResult {
+        StationDays last = 1;
+        StationDays next = 2;
+        uint32 daysSinceLast = 3;
+        uint32 daysUntilNext = 4;
+    }
+}

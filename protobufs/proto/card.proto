@@ -1,0 +1,71 @@
+syntax = "proto3";
+
+package fortuna.card;
+
+message Card {
+    enum Suit {
+        UNDEFINED_SUIT = 0;
+        WANDS = 1;
+        CUPS = 2;
+        SWORDS = 3;
+        COINS = 4;
+    }
+
+    enum NamedRank {
+        UNDEFINED_RANK = 0;
+        ACE = 1;
+        PAGE = 11;
+        KNIGHT = 12;
+        QUEEN = 13;
+        KING = 14;
+    }
+
+    message MinorArcana {
+        Suit suit = 1;
+        oneof rank {
+            uint32 number = 2;
+            NamedRank name = 3;
+        }
+    }
+
+    enum MajorArcana {
+        THE_FOOL = 0;
+        THE_MAGICIAN = 1;
+        THE_HIGH_PRIESTESS = 2;
+        THE_EMPRESS = 3;
+        THE_EMPEROR = 4;
+        THE_HIEROPHANT = 5;
+        THE_LOVERS = 6;
+        THE_CHARIOT = 7;
+        STRENGTH = 8;
+        THE_HERMIT = 9;
+        WHEEL_OF_FORTUNE = 10;
+        JUSTICE = 11;
+        THE_HANGED_MAN = 12;
+        DEATH = 13;
+        TEMPERANCE = 14;
+        THE_DEVIL = 15;
+        THE_TOWER = 16;
+        THE_STAR = 17;
+        THE_MOON = 18;
+        THE_SUN = 19;
+        JUDGEMENT = 20;
+        THE_WORLD = 21;
+    }
+
+    oneof card {
+        MinorArcana minor = 1;
+        MajorArcana major = 2;
+    }
+    bool inverted = 3;
+}
+
+message Connection {
+    string label = 1;
+    Card card = 2;
+    string url = 3;
+}
+
+message Spread {
+    repeated Connection connections = 1;
+}

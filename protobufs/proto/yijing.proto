@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package fortuna.yijing;
+
+message YijingDraw {
+    message Yijing {
+        string hexagram = 1;
+        string hanzi = 2;
+        string title = 3;
+    }
+
+    Yijing yijing = 1;
+    Yijing opposite = 2;
+    string description = 3;
+}

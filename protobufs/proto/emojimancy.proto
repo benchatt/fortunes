@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package fortuna.emoji;
+
+message EmojiCard {
+    message EmojiSet {
+        string emoji_1 = 1;
+        string emoji_2 = 2;
+        string emoji_3 = 3;
+        string label = 4;
+    }
+    
+    EmojiSet set_1 = 1;
+    EmojiSet set_2 = 2;
+    EmojiSet set_3 = 3;
+
+}
