@@ -37,4 +37,7 @@ message Season {
         uint32 daysSinceLast = 3;
         uint32 daysUntilNext = 4;
     }
+
+    MoonPhaseResult moonPhase = 1;
+    StationDaysResult stationDays = 2;
 }

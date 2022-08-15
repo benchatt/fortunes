@@ -13,7 +13,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0cseason.proto\x12\x0e\x66ortuna.season\"\x9b\x05\n\x06Season\x1a\x9f\x01\n\x0fMoonPhaseResult\x12.\n\x04last\x18\x01 \x01(\x0e\x32 .fortuna.season.Season.MoonPhase\x12.\n\x04next\x18\x02 \x01(\x0e\x32 .fortuna.season.Season.MoonPhase\x12\x15\n\rdaysSinceLast\x18\x03 \x01(\r\x12\x15\n\rdaysUntilNext\x18\x04 \x01(\r\x1a\xa5\x01\n\x11StationDaysResult\x12\x30\n\x04last\x18\x01 \x01(\x0e\x32\".fortuna.season.Season.StationDays\x12\x30\n\x04next\x18\x02 \x01(\x0e\x32\".fortuna.season.Season.StationDays\x12\x15\n\rdaysSinceLast\x18\x03 \x01(\r\x12\x15\n\rdaysUntilNext\x18\x04 \x01(\r\"_\n\tMoonPhase\x12\x18\n\x14UNDEFINED_MOON_PHASE\x10\x00\x12\x07\n\x03NEW\x10\x01\x12\x11\n\rFIRST_QUARTER\x10\x02\x12\x08\n\x04\x46ULL\x10\x03\x12\x12\n\x0eSECOND_QUARTER\x10\x04\"\xe5\x01\n\x0bStationDays\x12\x19\n\x15UNDEFINED_STATION_DAY\x10\x00\x12\x15\n\x11\x44\x45\x43\x45MBER_SOLSTICE\x10\x01\x12\x1a\n\x16\x46\x45\x42RUARY_CROSS_QUARTER\x10\x02\x12\x11\n\rMARCH_EQUINOX\x10\x03\x12\x15\n\x11MAY_CROSS_QUARTER\x10\x04\x12\x11\n\rJUNE_SOLSTICE\x10\x05\x12\x18\n\x14\x41UGUST_CROSS_QUARTER\x10\x06\x12\x15\n\x11SEPTEMBER_EQUINOX\x10\x07\x12\x1a\n\x16NOVEMBER_CROSS_QUARTER\x10\x08\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0cseason.proto\x12\x0e\x66ortuna.season\"\x95\x06\n\x06Season\x12\x39\n\tmoonPhase\x18\x01 \x01(\x0b\x32&.fortuna.season.Season.MoonPhaseResult\x12=\n\x0bstationDays\x18\x02 \x01(\x0b\x32(.fortuna.season.Season.StationDaysResult\x1a\x9f\x01\n\x0fMoonPhaseResult\x12.\n\x04last\x18\x01 \x01(\x0e\x32 .fortuna.season.Season.MoonPhase\x12.\n\x04next\x18\x02 \x01(\x0e\x32 .fortuna.season.Season.MoonPhase\x12\x15\n\rdaysSinceLast\x18\x03 \x01(\r\x12\x15\n\rdaysUntilNext\x18\x04 \x01(\r\x1a\xa5\x01\n\x11StationDaysResult\x12\x30\n\x04last\x18\x01 \x01(\x0e\x32\".fortuna.season.Season.StationDays\x12\x30\n\x04next\x18\x02 \x01(\x0e\x32\".fortuna.season.Season.StationDays\x12\x15\n\rdaysSinceLast\x18\x03 \x01(\r\x12\x15\n\rdaysUntilNext\x18\x04 \x01(\r\"_\n\tMoonPhase\x12\x18\n\x14UNDEFINED_MOON_PHASE\x10\x00\x12\x07\n\x03NEW\x10\x01\x12\x11\n\rFIRST_QUARTER\x10\x02\x12\x08\n\x04\x46ULL\x10\x03\x12\x12\n\x0eSECOND_QUARTER\x10\x04\"\xe5\x01\n\x0bStationDays\x12\x19\n\x15UNDEFINED_STATION_DAY\x10\x00\x12\x15\n\x11\x44\x45\x43\x45MBER_SOLSTICE\x10\x01\x12\x1a\n\x16\x46\x45\x42RUARY_CROSS_QUARTER\x10\x02\x12\x11\n\rMARCH_EQUINOX\x10\x03\x12\x15\n\x11MAY_CROSS_QUARTER\x10\x04\x12\x11\n\rJUNE_SOLSTICE\x10\x05\x12\x18\n\x14\x41UGUST_CROSS_QUARTER\x10\x06\x12\x15\n\x11SEPTEMBER_EQUINOX\x10\x07\x12\x1a\n\x16NOVEMBER_CROSS_QUARTER\x10\x08\x62\x06proto3')
 
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'season_pb2', globals())
@@ -21,13 +21,13 @@ if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
   _SEASON._serialized_start=33
-  _SEASON._serialized_end=700
-  _SEASON_MOONPHASERESULT._serialized_start=44
-  _SEASON_MOONPHASERESULT._serialized_end=203
-  _SEASON_STATIONDAYSRESULT._serialized_start=206
-  _SEASON_STATIONDAYSRESULT._serialized_end=371
-  _SEASON_MOONPHASE._serialized_start=373
-  _SEASON_MOONPHASE._serialized_end=468
-  _SEASON_STATIONDAYS._serialized_start=471
-  _SEASON_STATIONDAYS._serialized_end=700
+  _SEASON._serialized_end=822
+  _SEASON_MOONPHASERESULT._serialized_start=166
+  _SEASON_MOONPHASERESULT._serialized_end=325
+  _SEASON_STATIONDAYSRESULT._serialized_start=328
+  _SEASON_STATIONDAYSRESULT._serialized_end=493
+  _SEASON_MOONPHASE._serialized_start=495
+  _SEASON_MOONPHASE._serialized_end=590
+  _SEASON_STATIONDAYS._serialized_start=593
+  _SEASON_STATIONDAYS._serialized_end=822
 # @@protoc_insertion_point(module_scope)
