@@ -3,6 +3,12 @@ from time import timezone
 
 import proto.card_pb2 as card_pb2
 import proto.webtime_pb2 as webtime_pb2
+import proto.emojimancy_pb2 as emojimancy_pb2
+import proto.yijing_pb2 as yijing_pb2
+import proto.season_pb2 as season_pb2
+import proto.strategy_pb2 as strategy_pb2
+import proto.writingprompt_pb2 as writingprompt_pb2
+import proto.magicword_pb2 as magicword_pb2
 
 def get_tz_offset():
     return int(-timezone / 3600)
@@ -73,6 +79,81 @@ def webtime():
         offset=get_tz_offset()
     )
 
+def emojis():
+    return emojimancy_pb2.EmojiCard(
+        set_1=emojimancy_pb2.EmojiCard.EmojiSet(
+            emoji_1='⚧',
+            emoji_2='🚩',
+            emoji_3='🖊',
+            label='the nature of the problem'
+        ),
+        set_2=emojimancy_pb2.EmojiCard.EmojiSet(
+            emoji_1='🦮',
+            emoji_2='🖖',
+            emoji_3='🌂',
+            label='the nature of the solution'
+        ),
+        set_3=emojimancy_pb2.EmojiCard.EmojiSet(
+            emoji_1='🔔',
+            emoji_2='🎺',
+            emoji_3='🍖',
+            label='a word of warning'
+        )
+    )
+
+def yijing():
+    return yijing_pb2.YijingDraw(
+        yijing=yijing_pb2.YijingDraw.Yijing(
+            hexagram='䷂',
+            hanzi='屯',
+            title='Beginning'
+        ),
+        opposite=yijing_pb2.YijingDraw.Yijing(
+            hexagram='䷱',
+            hanzi='鼎',
+            title='Establishing the New'
+        ),
+        description="Difficulty at the Beginning works supreme success,\nFurthering through perseverance.\nNothing should be undertaken.\nIt furthers one to appoint helpers."
+    )
+
+def magicword():
+    return(
+        magicword_pb2.MagicWord(
+            word='bird'
+        ),
+        magicword_pb2.MagicWord(
+            empty=True
+        )
+    )
+
+def strategy():
+    return(strategy_pb2.Strategy(strategy="Don't Panic"))
+
+def writingprompt():
+    return(
+        writingprompt_pb2.WritingPrompt(
+            character='orphaned farmboy',
+            premise='joins the resistance against an evil empire',
+            turn="and must learn the truth about his late father's legacy"
+        )
+    )
+
+def season():
+    return season_pb2.Season(
+        moonPhase=season_pb2.Season.MoonPhaseResult(
+            last=season_pb2.Season.MoonPhase.FULL,
+            next=season_pb2.Season.MoonPhase.LAST_QUARTER,
+            daysSinceLast = 6,
+            daysUntilNext = 1
+        ),
+        stationDays=season_pb2.Season.StationDaysResult(
+            last=season_pb2.Season.StationDays.AUGUST_CROSS_QUARTER,
+            next=season_pb2.Season.StationDays.SEPTEMBER_EQUINOX,
+            daysSinceLast = 10,
+            daysUntilNext = 36
+        )
+    )
+
 if __name__ == '__main__':
     # print(card_major())
     # print(card_minor_num())
@@ -80,4 +161,10 @@ if __name__ == '__main__':
     # conn = connection()
     # print(conn)
     # print(spread(conn))
-    print(webtime())
+    # print(webtime())
+    # print(emojis())
+    # print(yijing())
+    # print(magicword())
+    # print(strategy())
+    # print(writingprompt())
+    print(season())

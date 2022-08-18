@@ -9,7 +9,7 @@ message Season {
         NEW = 1;
         FIRST_QUARTER = 2;
         FULL = 3;
-        SECOND_QUARTER = 4;
+        LAST_QUARTER = 4;
     }
 
     message MoonPhaseResult {
