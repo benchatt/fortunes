@@ -13,7 +13,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0fmagicword.proto\x12\x11\x66ortuna.magicword\"?\n\tMagicWord\x12\x0e\n\x04word\x18\x01 \x01(\tH\x00\x12\x0f\n\x05\x65mpty\x18\x02 \x01(\x08H\x00\x42\x11\n\x0fmagicWordResultb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0fmagicword.proto\x12\x11\x66ortuna.magicword\"?\n\tMagicWord\x12\x0e\n\x04word\x18\x01 \x01(\tH\x00\x12\x0f\n\x05\x65mpty\x18\x02 \x01(\x08H\x00\x42\x11\n\x0fmagicWordResult\"%\n\x10MagicWordRequest\x12\x11\n\trequested\x18\x01 \x01(\x08\x32\x65\n\x10MagicWordService\x12Q\n\x0cGetMagicWord\x12#.fortuna.magicword.MagicWordRequest\x1a\x1c.fortuna.magicword.MagicWordb\x06proto3')
 
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'magicword_pb2', globals())
@@ -22,4 +22,8 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   DESCRIPTOR._options = None
   _MAGICWORD._serialized_start=38
   _MAGICWORD._serialized_end=101
+  _MAGICWORDREQUEST._serialized_start=103
+  _MAGICWORDREQUEST._serialized_end=140
+  _MAGICWORDSERVICE._serialized_start=142
+  _MAGICWORDSERVICE._serialized_end=243
 # @@protoc_insertion_point(module_scope)

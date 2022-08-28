@@ -13,7 +13,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0cyijing.proto\x12\x0e\x66ortuna.yijing\"\xc3\x01\n\nYijingDraw\x12\x31\n\x06yijing\x18\x01 \x01(\x0b\x32!.fortuna.yijing.YijingDraw.Yijing\x12\x33\n\x08opposite\x18\x02 \x01(\x0b\x32!.fortuna.yijing.YijingDraw.Yijing\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\x1a\x38\n\x06Yijing\x12\x10\n\x08hexagram\x18\x01 \x01(\t\x12\r\n\x05hanzi\x18\x02 \x01(\t\x12\r\n\x05title\x18\x03 \x01(\tb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0cyijing.proto\x12\x0e\x66ortuna.yijing\"\xc3\x01\n\nYijingDraw\x12\x31\n\x06yijing\x18\x01 \x01(\x0b\x32!.fortuna.yijing.YijingDraw.Yijing\x12\x33\n\x08opposite\x18\x02 \x01(\x0b\x32!.fortuna.yijing.YijingDraw.Yijing\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\x1a\x38\n\x06Yijing\x12\x10\n\x08hexagram\x18\x01 \x01(\t\x12\r\n\x05hanzi\x18\x02 \x01(\t\x12\r\n\x05title\x18\x03 \x01(\t\"\"\n\rYijingRequest\x12\x11\n\trequested\x18\x01 \x01(\x08\x32[\n\rYijingService\x12J\n\rgetYijingDraw\x12\x1d.fortuna.yijing.YijingRequest\x1a\x1a.fortuna.yijing.YijingDrawb\x06proto3')
 
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'yijing_pb2', globals())
@@ -24,4 +24,8 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _YIJINGDRAW._serialized_end=228
   _YIJINGDRAW_YIJING._serialized_start=172
   _YIJINGDRAW_YIJING._serialized_end=228
+  _YIJINGREQUEST._serialized_start=230
+  _YIJINGREQUEST._serialized_end=264
+  _YIJINGSERVICE._serialized_start=266
+  _YIJINGSERVICE._serialized_end=357
 # @@protoc_insertion_point(module_scope)

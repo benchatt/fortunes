@@ -8,3 +8,11 @@ message MagicWord {
         bool empty = 2;
     }
 }
+
+message MagicWordRequest {
+    bool requested = 1;
+}
+
+service MagicWordService {
+    rpc GetMagicWord(MagicWordRequest) returns (MagicWord);
+}

@@ -13,7 +13,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x10\x65mojimancy.proto\x12\rfortuna.emoji\"\xef\x01\n\tEmojiCard\x12\x30\n\x05set_1\x18\x01 \x01(\x0b\x32!.fortuna.emoji.EmojiCard.EmojiSet\x12\x30\n\x05set_2\x18\x02 \x01(\x0b\x32!.fortuna.emoji.EmojiCard.EmojiSet\x12\x30\n\x05set_3\x18\x03 \x01(\x0b\x32!.fortuna.emoji.EmojiCard.EmojiSet\x1aL\n\x08\x45mojiSet\x12\x0f\n\x07\x65moji_1\x18\x01 \x01(\t\x12\x0f\n\x07\x65moji_2\x18\x02 \x01(\t\x12\x0f\n\x07\x65moji_3\x18\x03 \x01(\t\x12\r\n\x05label\x18\x04 \x01(\tb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x10\x65mojimancy.proto\x12\rfortuna.emoji\"\xef\x01\n\tEmojiCard\x12\x30\n\x05set_1\x18\x01 \x01(\x0b\x32!.fortuna.emoji.EmojiCard.EmojiSet\x12\x30\n\x05set_2\x18\x02 \x01(\x0b\x32!.fortuna.emoji.EmojiCard.EmojiSet\x12\x30\n\x05set_3\x18\x03 \x01(\x0b\x32!.fortuna.emoji.EmojiCard.EmojiSet\x1aL\n\x08\x45mojiSet\x12\x0f\n\x07\x65moji_1\x18\x01 \x01(\t\x12\x0f\n\x07\x65moji_2\x18\x02 \x01(\t\x12\x0f\n\x07\x65moji_3\x18\x03 \x01(\t\x12\r\n\x05label\x18\x04 \x01(\t\"!\n\x0c\x45mojiRequest\x12\x11\n\trequested\x18\x01 \x01(\x08\x32U\n\x0c\x45mojiService\x12\x45\n\x0cGetEmojiCard\x12\x1b.fortuna.emoji.EmojiRequest\x1a\x18.fortuna.emoji.EmojiCardb\x06proto3')
 
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'emojimancy_pb2', globals())
@@ -24,4 +24,8 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _EMOJICARD._serialized_end=275
   _EMOJICARD_EMOJISET._serialized_start=199
   _EMOJICARD_EMOJISET._serialized_end=275
+  _EMOJIREQUEST._serialized_start=277
+  _EMOJIREQUEST._serialized_end=310
+  _EMOJISERVICE._serialized_start=312
+  _EMOJISERVICE._serialized_end=397
 # @@protoc_insertion_point(module_scope)

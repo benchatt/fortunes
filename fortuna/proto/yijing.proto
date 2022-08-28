@@ -13,3 +13,11 @@ message YijingDraw {
     Yijing opposite = 2;
     string description = 3;
 }
+
+message YijingRequest {
+    bool requested = 1;
+}
+
+service YijingService {
+    rpc getYijingDraw(YijingRequest) returns (YijingDraw);
+}

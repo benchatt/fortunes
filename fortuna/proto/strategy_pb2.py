@@ -13,7 +13,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0estrategy.proto\x12\x10\x66ortuna.strategy\"\x1c\n\x08Strategy\x12\x10\n\x08strategy\x18\x01 \x01(\tb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0estrategy.proto\x12\x10\x66ortuna.strategy\"\x1c\n\x08Strategy\x12\x10\n\x08strategy\x18\x01 \x01(\t\"$\n\x0fStrategyRequest\x12\x11\n\trequested\x18\x01 \x01(\x08\x32_\n\x0fStrategyService\x12L\n\x0bGetStrategy\x12!.fortuna.strategy.StrategyRequest\x1a\x1a.fortuna.strategy.Strategyb\x06proto3')
 
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'strategy_pb2', globals())
@@ -22,4 +22,8 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   DESCRIPTOR._options = None
   _STRATEGY._serialized_start=36
   _STRATEGY._serialized_end=64
+  _STRATEGYREQUEST._serialized_start=66
+  _STRATEGYREQUEST._serialized_end=102
+  _STRATEGYSERVICE._serialized_start=104
+  _STRATEGYSERVICE._serialized_end=199
 # @@protoc_insertion_point(module_scope)

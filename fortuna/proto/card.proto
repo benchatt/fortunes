@@ -69,3 +69,12 @@ message Connection {
 message Spread {
     repeated Connection connections = 1;
 }
+
+message ReadingRequest {
+    int32 numberOfCards = 1;
+    repeated string labels = 2;
+}
+
+service CardService {
+    rpc GetSpread(ReadingRequest) returns (Spread) {}
+}

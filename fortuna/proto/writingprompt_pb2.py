@@ -13,7 +13,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x13writingprompt.proto\x12\x15\x66ortuna.writingprompt\"A\n\rWritingPrompt\x12\x11\n\tcharacter\x18\x01 \x01(\t\x12\x0f\n\x07premise\x18\x02 \x01(\t\x12\x0c\n\x04turn\x18\x03 \x01(\tb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x13writingprompt.proto\x12\x15\x66ortuna.writingprompt\"A\n\rWritingPrompt\x12\x11\n\tcharacter\x18\x01 \x01(\t\x12\x0f\n\x07premise\x18\x02 \x01(\t\x12\x0c\n\x04turn\x18\x03 \x01(\t\")\n\x14WritingPromptRequest\x12\x11\n\trequested\x18\x01 \x01(\x08\x32}\n\x14WritingPromptService\x12\x65\n\x10getWritingPrompt\x12+.fortuna.writingprompt.WritingPromptRequest\x1a$.fortuna.writingprompt.WritingPromptb\x06proto3')
 
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'writingprompt_pb2', globals())
@@ -22,4 +22,8 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   DESCRIPTOR._options = None
   _WRITINGPROMPT._serialized_start=46
   _WRITINGPROMPT._serialized_end=111
+  _WRITINGPROMPTREQUEST._serialized_start=113
+  _WRITINGPROMPTREQUEST._serialized_end=154
+  _WRITINGPROMPTSERVICE._serialized_start=156
+  _WRITINGPROMPTSERVICE._serialized_end=281
 # @@protoc_insertion_point(module_scope)

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package fortuna.strategy;
+
+message Strategy {
+    string strategy = 1;
+}
+
+message StrategyRequest {
+    bool requested = 1;
+}
+
+service StrategyService {
+    rpc GetStrategy(StrategyRequest) returns (Strategy);
+}

@@ -15,3 +15,11 @@ message EmojiCard {
     EmojiSet set_3 = 3;
 
 }
+
+message EmojiRequest {
+    bool requested = 1;
+}
+
+service EmojiService {
+    rpc GetEmojiCard(EmojiRequest) returns (EmojiCard);
+}

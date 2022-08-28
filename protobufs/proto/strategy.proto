@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-package fortuna.strategy;
-
-message Strategy {
-    string strategy = 1;
-}

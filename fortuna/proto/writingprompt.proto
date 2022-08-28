@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package fortuna.writingprompt;
+
+message WritingPrompt {
+    string character = 1;
+    string premise = 2;
+    string turn = 3;
+}
+
+message WritingPromptRequest {
+    bool requested = 1;
+}
+
+service WritingPromptService {
+    rpc getWritingPrompt(WritingPromptRequest) returns (WritingPrompt);
+}

@@ -1,4 +1,4 @@
-BIN = protobufs
+BIN = fortuna
 PROTO_DIR = proto
 
 run: generate

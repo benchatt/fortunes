@@ -14,3 +14,11 @@ message Webtime {
     int32 offset = 2;
     InternetTime internetTime = 3;
 }
+
+message WebtimeRequest {
+    string timeZone = 1;
+}
+
+service WebtimeService {
+    rpc GetWebtime(WebtimeRequest) returns (Webtime);
+}

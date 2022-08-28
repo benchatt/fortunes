@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 from google.protobuf import timestamp_pb2 as google_dot_protobuf_dot_timestamp__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rwebtime.proto\x12\x0f\x66ortuna.webtime\x1a\x1fgoogle/protobuf/timestamp.proto\"\xb4\x01\n\x07Webtime\x12.\n\nnormalTime\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\x0e\n\x06offset\x18\x02 \x01(\x05\x12;\n\x0cinternetTime\x18\x03 \x01(\x0b\x32%.fortuna.webtime.Webtime.InternetTime\x1a,\n\x0cInternetTime\x12\r\n\x05\x62\x65\x61ts\x18\x01 \x01(\x04\x12\r\n\x05ticks\x18\x02 \x01(\x04\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rwebtime.proto\x12\x0f\x66ortuna.webtime\x1a\x1fgoogle/protobuf/timestamp.proto\"\xb4\x01\n\x07Webtime\x12.\n\nnormalTime\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\x0e\n\x06offset\x18\x02 \x01(\x05\x12;\n\x0cinternetTime\x18\x03 \x01(\x0b\x32%.fortuna.webtime.Webtime.InternetTime\x1a,\n\x0cInternetTime\x12\r\n\x05\x62\x65\x61ts\x18\x01 \x01(\x04\x12\r\n\x05ticks\x18\x02 \x01(\x04\"\"\n\x0eWebtimeRequest\x12\x10\n\x08timeZone\x18\x01 \x01(\t2Y\n\x0eWebtimeService\x12G\n\nGetWebtime\x12\x1f.fortuna.webtime.WebtimeRequest\x1a\x18.fortuna.webtime.Webtimeb\x06proto3')
 
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'webtime_pb2', globals())
@@ -25,4 +25,8 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _WEBTIME._serialized_end=248
   _WEBTIME_INTERNETTIME._serialized_start=204
   _WEBTIME_INTERNETTIME._serialized_end=248
+  _WEBTIMEREQUEST._serialized_start=250
+  _WEBTIMEREQUEST._serialized_end=284
+  _WEBTIMESERVICE._serialized_start=286
+  _WEBTIMESERVICE._serialized_end=375
 # @@protoc_insertion_point(module_scope)

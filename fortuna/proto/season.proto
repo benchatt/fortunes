@@ -41,3 +41,11 @@ message Season {
     MoonPhaseResult moonPhase = 1;
     StationDaysResult stationDays = 2;
 }
+
+message SeasonRequest {
+    bool northernHemisphere = 1;
+}
+
+service SeasonService {
+    rpc GetSeason(SeasonRequest) returns (Season);
+}
